@@ -10,6 +10,7 @@ namespace Assets.C_.LoadJS
 {
     class myCashJS :DoLoadJS
     {
+        public MainPoint load;
         public override void Load()
         {
             StreamReader gfile = new StreamReader(System.IO.Path.Combine(Application.absoluteURL, "myCash"));

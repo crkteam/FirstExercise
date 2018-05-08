@@ -8,4 +8,15 @@ public class JustTest : MonoBehaviour {
        myCashJS lj = new myCashJS();
         lj.Save(0);
     }
+    public void justtry() {
+        //myLevelJS ml = new myLevelJS();
+        //ml.Save();
+        MainLevel ml = new MainLevel();
+        ml.Level.Add(10);
+        ml.Level.Add(200);
+        ml.Level.Add(500);
+        ml.Level[0] = 50;
+        string saveString = JsonUtility.ToJson(ml);
+        Debug.Log(saveString);
+    }
 }
