@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.C_.LoadJS;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +14,7 @@ public class Refresh : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        LoadJS lj = new LoadJS();
+        myCashJS lj = new myCashJS();
         lj.Load();
 
         t.text = lj.load.cash.ToString();

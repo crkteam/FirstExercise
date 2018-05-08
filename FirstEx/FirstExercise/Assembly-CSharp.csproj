@@ -53,7 +53,9 @@
   <ItemGroup>
      <Compile Include="Assets\C#\Click.cs" />
      <Compile Include="Assets\C#\JustTest.cs" />
-     <Compile Include="Assets\C#\LoadJS.cs" />
+     <Compile Include="Assets\C#\LoadJS\DoLoadJS.cs" />
+     <Compile Include="Assets\C#\LoadJS\LaodJs.cs" />
+     <Compile Include="Assets\C#\LoadJS\myCashJS.cs" />
      <Compile Include="Assets\C#\MainPoint.cs" />
      <Compile Include="Assets\C#\ProgressBar.cs" />
      <Compile Include="Assets\C#\Refresh.cs" />

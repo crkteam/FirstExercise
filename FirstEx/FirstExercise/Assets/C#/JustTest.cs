@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using Assets.C_.LoadJS;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class JustTest : MonoBehaviour {
     public void toZero() {
-        LoadJS lj = new LoadJS();
+       myCashJS lj = new myCashJS();
         lj.Save(0);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.C_.LoadJS;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -19,7 +20,7 @@ public class Click : MonoBehaviour {
     }
 
     public void save() {
-        LoadJS lj = new LoadJS();
+        myCashJS lj = new myCashJS();
         lj.Load();
 
         this.cash = lj.load.cash;
