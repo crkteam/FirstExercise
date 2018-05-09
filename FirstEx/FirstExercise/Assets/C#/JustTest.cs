@@ -1,4 +1,5 @@
 ﻿using Assets.C_.LoadJS;
+using Assets.C_.LoadJS.myLevel;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,14 +10,9 @@ public class JustTest : MonoBehaviour {
         lj.Save(0);
     }
     public void justtry() {
-        //myLevelJS ml = new myLevelJS();
-        //ml.Save();
-        MainLevel ml = new MainLevel();
-        ml.Level.Add(10);
-        ml.Level.Add(200);
-        ml.Level.Add(500);
-        ml.Level[0] = 50;
-        string saveString = JsonUtility.ToJson(ml);
-        Debug.Log(saveString);
+        myLevel ml = new myLevel("1");
+        ml.Save(10);
+        myLevel ml2 = new myLevel("2");
+        ml2.Save(20);
     }
 }

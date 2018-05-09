@@ -1,4 +1,5 @@
 ﻿using Assets.C_.LoadJS;
+using Assets.C_.LoadJS.myLevel;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class Refresh : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame

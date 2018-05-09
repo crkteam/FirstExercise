@@ -13,7 +13,7 @@ namespace Assets.C_.LoadJS
         public MainPoint load;
         public override void Load()
         {
-            StreamReader gfile = new StreamReader(System.IO.Path.Combine(Application.absoluteURL, "myCash"));
+            StreamReader gfile = new StreamReader(System.IO.Path.Combine(Application.dataPath + "/Resourses", "myCash"));
             string loadJson = gfile.ReadToEnd();
             gfile.Close();
 
@@ -26,7 +26,7 @@ namespace Assets.C_.LoadJS
             mp.cash = value[0];
             string saveString = JsonUtility.ToJson(mp);
 
-            StreamWriter file = new StreamWriter(System.IO.Path.Combine(Application.absoluteURL,"myCash"));
+            StreamWriter file = new StreamWriter(System.IO.Path.Combine(Application.dataPath + "/Resourses", "myCash"));
             file.Write(saveString);
             file.Close();
         }
