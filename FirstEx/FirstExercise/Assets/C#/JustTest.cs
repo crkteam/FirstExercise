@@ -8,6 +8,8 @@ public class JustTest : MonoBehaviour {
     public void toZero() {
        myCashJS lj = new myCashJS();
         lj.Save(0);
+        myLevel ml = new myLevel("1");
+        ml.Save(0);
     }
     public void justtry() {
         myLevel ml = new myLevel("1");

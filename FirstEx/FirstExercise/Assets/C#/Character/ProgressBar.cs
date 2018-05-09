@@ -12,25 +12,18 @@ public class ProgressBar : MonoBehaviour {
     public Slider s;
 
     int level; //等級超過1等才會開始
-
+    public ProgressBar(Slider g) {
+        s = g;
+    }
 	// Use this for initialization
 	void Start () {
 
     }
     public void ckick() {
-        myLevel ml = new myLevel(slevel);
-        ml.Load();
-        level = ml.load.Level;
-
-        if (level > 0)
-        {
-            InvokeRepeating("run", 0, 0.01f);
-            s.maxValue = maxtime;
-        }
         
     }
     void run() {
-        if (time >= maxtime)
+        if (time >= 2)
         {
             time = 0;
             s.value = 0;

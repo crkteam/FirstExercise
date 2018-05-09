@@ -1,4 +1,5 @@
-﻿using Assets.C_.LoadJS.myLevel;
+﻿using Assets.C_.Character;
+using Assets.C_.LoadJS.myLevel;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,14 +15,17 @@ public class UpgradeButton : MonoBehaviour {
         myLevel ml = new myLevel(slevel);
         level++;
         ml.Save(level);
-
+        level = ml.load.Level;
+        Convert con = new Convert();
+        int cash = con.cash(level);
+        buy.text = cash.ToString();
     }
     void Update()
     {
         myLevel ml = new myLevel(slevel);
         ml.Load();
-        level = ml.load.Level;
+        
         Level.text = level.ToString();
-        buy.text = level.ToString();
+
     }
 }
