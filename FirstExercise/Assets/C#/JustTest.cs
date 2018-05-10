@@ -13,8 +13,9 @@ public class JustTest : MonoBehaviour {
     }
     public void justtry() {
         myLevel ml = new myLevel("1");
-        ml.Save(10);
-        myLevel ml2 = new myLevel("2");
-        ml2.Save(20);
+        ml.Load();
+
+            GameObject.Find("MainClick").GetComponent<Click>().num++;
+        Debug.Log(GameObject.Find("MainClick").GetComponent<Click>().num);
     }
 }

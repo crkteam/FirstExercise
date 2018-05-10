@@ -300,17 +300,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\C#\Character\Convert.cs" />
+    <Compile Include="Assets\C#\Character\OpenChange.cs" />
     <Compile Include="Assets\C#\Character\ProgressBar.cs" />
+    <Compile Include="Assets\C#\Character\SetStatus.cs" />
+    <Compile Include="Assets\C#\Character\UpDecide.cs" />
     <Compile Include="Assets\C#\Character\UpgradeButton.cs" />
     <Compile Include="Assets\C#\Click.cs" />
     <Compile Include="Assets\C#\JustTest.cs" />
-    <Compile Include="Assets\C#\LoadJS\AllLevel.cs" />
     <Compile Include="Assets\C#\LoadJS\DoLoadJS.cs" />
     <Compile Include="Assets\C#\LoadJS\LaodJs.cs" />
     <Compile Include="Assets\C#\LoadJS\MainLevel.cs" />
     <Compile Include="Assets\C#\LoadJS\MainPoint.cs" />
     <Compile Include="Assets\C#\LoadJS\myCashJS.cs" />
-    <Compile Include="Assets\C#\LoadJS\myLevelJS.cs" />
+    <Compile Include="Assets\C#\LoadJS\myLevel\myLevel.cs" />
     <Compile Include="Assets\C#\Refresh.cs" />
   </ItemGroup>
   <ItemGroup>
