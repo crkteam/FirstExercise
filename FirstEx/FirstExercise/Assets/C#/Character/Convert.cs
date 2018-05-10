@@ -5,19 +5,21 @@ using System.Text;
 
 namespace Assets.C_.Character
 {
-    class Convert 
+    class Convert
     {
-        public int cash(int i) {
-            if (i.Equals(0))
+        public int cash(int i)
+        {
+            int[] tmp = new int[i + 1];
+            tmp[0] = 20;
+            tmp[1] = 20;
+            for (int j = 2; j < tmp.Length; j++)
             {
-                return 20;
+                int lastcash = tmp[j - 1];
+                tmp[j] = lastcash + (int)(2 * Math.Sqrt(lastcash));
             }
-            if (i.Equals(1)) {
-                return 20;
-            }
-            Double sq = Math.Sqrt(cash(i - 1));
-            int ans =(int)(cash(i - 1) + 20 * sq);
-            return ans;
+
+
+            return tmp[i];
         }
     }
 }
