@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\C#\Character\Convert.cs" />
+    <Compile Include="Assets\C#\Character\OpenChange.cs" />
     <Compile Include="Assets\C#\Character\ProgressBar.cs" />
     <Compile Include="Assets\C#\Character\UpgradeButton.cs" />
     <Compile Include="Assets\C#\Click.cs" />

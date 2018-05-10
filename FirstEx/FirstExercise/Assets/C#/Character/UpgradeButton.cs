@@ -22,10 +22,7 @@ public class UpgradeButton : MonoBehaviour {
     }
     void Update()
     {
-        myLevel ml = new myLevel(slevel);
-        ml.Load();
         
-        Level.text = level.ToString();
 
     }
 }
