@@ -5,9 +5,13 @@ using System.Text;
 
 namespace Assets.C_.Character
 {
-    class Convert
+    class Convert 
     {
         public int cash(int i) {
+            if (i.Equals(0))
+            {
+                return 20;
+            }
             if (i.Equals(1)) {
                 return 20;
             }

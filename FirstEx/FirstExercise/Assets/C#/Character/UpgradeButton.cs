@@ -6,19 +6,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UpgradeButton : MonoBehaviour {
-    public Text Level;
-    public Text buy;
 
-    int level;
-    public string slevel;
     public void upgrade(){
-        myLevel ml = new myLevel(slevel);
+        myLevel ml = new myLevel("1"); //搜尋目前等級
+        ml.Load();
+        int level = ml.load.Level;
         level++;
         ml.Save(level);
-        level = ml.load.Level;
-        Convert con = new Convert();
-        int cash = con.cash(level);
-        buy.text = cash.ToString();
+        SetStatus s1 = new SetStatus();
+        s1.Set("1");
+        
+        UpDecide up = new UpDecide();//調整點擊變數
+        up.upgrade();
     }
     void Update()
     {

@@ -832,12 +832,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 726930780}
---- !u!114 &728858957 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114469668807035356, guid: 8d6c256bda0a1b04a8bd92a8648f50aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 71110040}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &831159162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,9 +1105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45087154be80b3640a53b632561c48ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level: {fileID: 728858957}
-  buy: {fileID: 1506742400}
-  slevel: 1
 --- !u!1 &1415619798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,8 +1211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b4a8855e60778a40943cdc36abd3fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgrade: {fileID: 1506742400}
-  level: {fileID: 728858957}
 --- !u!1 &1432743977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,7 +1297,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1432743980
@@ -1357,12 +1346,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 1
   t: {fileID: 194926007}
---- !u!114 &1506742400 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114365312002978508, guid: 8d6c256bda0a1b04a8bd92a8648f50aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 71110040}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1517508197
 GameObject:
   m_ObjectHideFlags: 0
