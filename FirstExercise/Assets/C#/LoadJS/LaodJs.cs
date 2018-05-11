@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.C_.LoadJS
 {
-    interface LaodJs
+    public interface LaodJs
     {
         
         void Save(params int[] value);

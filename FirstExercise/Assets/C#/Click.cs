@@ -1,4 +1,5 @@
 ﻿using Assets.C_.LoadJS;
+using Assets.C_.LoadJS.myLevel;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -22,7 +23,9 @@ public class Click : MonoBehaviour {
     public void save() {
         myCashJS lj = new myCashJS();
         lj.Load();
-
+        myLevel ml = new myLevel("1");
+        ml.Load();
+        num = ml.load.Level;
         this.cash = lj.load.cash;
         this.cash += num;
 

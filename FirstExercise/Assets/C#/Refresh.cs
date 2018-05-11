@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Refresh : MonoBehaviour {
-    public Text t;
+    Text t;
     // Use this for initialization
     void Start () {
       
@@ -15,7 +15,7 @@ public class Refresh : MonoBehaviour {
     void Update () {
         myCashJS lj = new myCashJS();
         lj.Load();
-
+        t = GameObject.Find("Cash").GetComponent<Text>();
         t.text = lj.load.cash.ToString();
 
     }
