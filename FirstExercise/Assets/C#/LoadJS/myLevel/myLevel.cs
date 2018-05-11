@@ -16,7 +16,7 @@ namespace Assets.C_.LoadJS.myLevel
         }
         public override void Load()
         {
-            StreamReader gfile = new StreamReader(System.IO.Path.Combine(Application.dataPath + "/Resourses/myLevel", "myLevel"+who));
+            StreamReader gfile = new StreamReader(System.IO.Path.Combine(Application.persistentDataPath, "myLevel"+who));
             string loadJson = gfile.ReadToEnd();
             gfile.Close();
 
@@ -29,7 +29,7 @@ namespace Assets.C_.LoadJS.myLevel
             mp.Level = value[0];
             string saveString = JsonUtility.ToJson(mp);
 
-            StreamWriter file = new StreamWriter(System.IO.Path.Combine(Application.dataPath + "/Resourses/myLevel", "myLevel"+who));
+            StreamWriter file = new StreamWriter(System.IO.Path.Combine(Application.persistentDataPath, "myLevel"+who));
             file.Write(saveString);
             file.Close();
         }
