@@ -25,7 +25,7 @@ public class Click : MonoBehaviour {
         lj.Load();
         myLevel ml = new myLevel("1");
         ml.Load();
-        num = ml.load.Level+1;
+        num = ml.load.Level;
         this.cash = lj.load.cash;
         this.cash += num;
 

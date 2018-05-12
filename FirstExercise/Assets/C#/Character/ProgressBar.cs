@@ -19,9 +19,11 @@ public class ProgressBar :MonoBehaviour {
             InvokeRepeating("run", 0, 0.01f);
         }
     }
-    
-    public void run() {
-        if (sl.value >= maxtime) {
+
+    public void run()
+    {
+        if (sl.value >= maxtime)
+        {
             sl.value = 0;
             myLevel ml = new myLevel(num);
             ml.Load();

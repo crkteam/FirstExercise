@@ -12,17 +12,18 @@ namespace Assets.C_.Character
     {
         public Text level;
         public Text upgrade;
-        public void Set(String number) { //填入要的那項
-            level = GameObject.Find("Cp"+number+"levelText").GetComponent<Text>();
+        public void Set(String number)
+        { //填入要的那項
+            level = GameObject.Find("Cp" + number + "levelText").GetComponent<Text>();
             upgrade = GameObject.Find("Cp" + number + "upText").GetComponent<Text>();
             myLevel ml = new myLevel(number);
             ml.Load();
             level.text = ml.load.Level.ToString();
-            Convert con = new Convert();
+            myConvert con = new myConvert();
             int bottle = con.cash(ml.load.Level);
             upgrade.text = bottle.ToString();
         }
 
     }
-    }
+}
 
