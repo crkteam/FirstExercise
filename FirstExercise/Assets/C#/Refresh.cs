@@ -1,4 +1,5 @@
-﻿using Assets.C_.LoadJS;
+﻿using Assets.C_;
+using Assets.C_.LoadJS;
 using Assets.C_.LoadJS.myLevel;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,6 +18,6 @@ public class Refresh : MonoBehaviour {
         lj.Load();
         t = GameObject.Find("Cash").GetComponent<Text>();
         t.text = lj.load.cash.ToString();
-
+        ButtonThinker bt = new ButtonThinker();
     }
 }
