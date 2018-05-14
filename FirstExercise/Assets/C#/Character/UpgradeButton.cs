@@ -14,7 +14,7 @@ public class UpgradeButton : MonoBehaviour {
         mc.Load();
 
         myConvert con = new myConvert();
-        mc.load.cash -= con.cash(ml.load.Level);
+        mc.load.cash -= con.cash(ml.load.Level,num);
 
         mc.Save(mc.load.cash);
         int level = ml.load.Level;

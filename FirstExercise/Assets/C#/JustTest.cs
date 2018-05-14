@@ -25,8 +25,8 @@ public class JustTest : MonoBehaviour {
 
         mj.Save(0);
 
-        m1.Save(1);
-        m2.Save(0);
+        m1.Save(25);
+        m2.Save(25);
         m3.Save(0);
         m4.Save(0);
         m5.Save(0);

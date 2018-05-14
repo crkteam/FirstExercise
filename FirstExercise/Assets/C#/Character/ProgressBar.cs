@@ -1,4 +1,5 @@
-﻿using Assets.C_.LoadJS;
+﻿using Assets.C_.Character;
+using Assets.C_.LoadJS;
 using Assets.C_.LoadJS.myLevel;
 using System.Collections;
 using System.Collections.Generic;
@@ -29,7 +30,11 @@ public class ProgressBar :MonoBehaviour {
             ml.Load();
             myCashJS mc = new myCashJS();
             mc.Load();
-            mc.load.cash += ml.load.Level;
+            myConvert con = new myConvert();
+            float C = con.cash(ml.load.Level, num);
+            int D = (int)Mathf.Sqrt(C);
+            mc.load.cash += ((int)(C/6)+D);
+            Debug.Log((int)(C / 6)+D);
             mc.Save(mc.load.cash);
         }
         sl.value += 0.01f;

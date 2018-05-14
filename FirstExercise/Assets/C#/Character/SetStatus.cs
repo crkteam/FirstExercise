@@ -20,7 +20,7 @@ namespace Assets.C_.Character
             ml.Load();
             level.text = ml.load.Level.ToString();
             myConvert con = new myConvert();
-            int bottle = con.cash(ml.load.Level);
+            int bottle = con.cash(ml.load.Level,number);
             upgrade.text = bottle.ToString();
         }
 

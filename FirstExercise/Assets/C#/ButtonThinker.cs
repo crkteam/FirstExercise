@@ -26,7 +26,7 @@ namespace Assets.C_
                 mj.Load();
 
                 myConvert con = new myConvert();
-                int value = con.cash(ml.load.Level);
+                int value = con.cash(ml.load.Level,i.ToString());
                 if (mj.load.cash > value)
                 {
                     btn.interactable=true;
